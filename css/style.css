@@ -116,7 +116,7 @@ img {
 
 .about-image {
     flex-wrap: wrap;
-    background: url(../image/wedding-photo-001.jpg) no-repeat center center;
+    background: url(../image/francis-002.jpg) no-repeat center center;
     background-size: cover;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 600px;

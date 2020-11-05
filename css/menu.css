@@ -37,6 +37,12 @@
 
 .fm-menu li a {
     text-decoration: none;
-    
+    padding: 2rem;
+    font-size: 1.2rem;
 }
+
+.fm-menu a:hover {
+    color: #2ee4d5;
+    transition: 1s;
+  }
 
