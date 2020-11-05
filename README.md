@@ -1,2 +1,2 @@
 # my-own-website
-#HTML-and-CSS
+#HTML-CSS-JAVASCRIPT
