@@ -55,9 +55,9 @@ img {
 }
 
 .hero-content h3 {
-    font-size: calc(1.2rem + 1vw);
+    font-size: calc(1.2rem + 0.8vw);
     font-weight: 100;
-    color: #424242;
+    color: #393e46;
     text-align: center; 
     letter-spacing: 0.2rem;
 }
@@ -65,11 +65,17 @@ img {
 .hero-content h1 {
     font-weight: 200;
     font-size: calc(0.9rem + 7vw);
-    color: #424242;
+    color: #393e46;
     text-align: left; 
     line-height: 1;
     text-align: center; 
     letter-spacing: 1rem;
+}
+
+.hero-content h1:hover {
+    background-color: #222831;
+    color: #ffffff;
+    transition: .5s;
 }
 
 /* .about-container h1, p {
@@ -116,7 +122,7 @@ img {
 
 .about-image {
     flex-wrap: wrap;
-    background: url(../image/francis-002.jpg) no-repeat center center;
+    background: url(../image/francis-001.jpg) no-repeat top center;
     background-size: cover;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 600px;

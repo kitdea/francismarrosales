@@ -4,16 +4,21 @@
     top: 0;
     height: 0;
     z-index: 4;
+    box-shadow: #222831;
 }
 
 .container-header {
-    margin: auto;
+    width: 80%;
+    margin: 0 auto;
     padding: 1rem 0;
+    
 }
+
+
 
 .container-header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -21,28 +26,33 @@
     font-size: 2rem;
     margin: .5rem;
     text-decoration: none;
-    
+    color: #393e46;
+}
+
+#fm-logo-header:hover {
+    color: #ffffff;
+    background-color: #393e46;
+    transition: .4s;
 }
 
 .fm-nav-menu {
     margin: 0;
     padding: 0;
     display: flex;
-}
-
-
-.fm-menu li {
     list-style: none;
+    font-size: 1.4rem;
 }
 
-.fm-menu li a {
+.fm-menu {
+    color: #393e46;
     text-decoration: none;
-    padding: 2rem;
-    font-size: 1.2rem;
+    padding: 2rem;  
+    
 }
 
-.fm-menu a:hover {
-    color: #2ee4d5;
-    transition: 1s;
+.fm-menu:hover {
+    color: #777777;
+    transition: .4s;
+    
   }
 
