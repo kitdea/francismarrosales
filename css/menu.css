@@ -6,7 +6,37 @@
     z-index: 4;
 }
 
-.fm-nav-menu {
-    display: flex;
-    flex-direction: column;
+.container-header {
+    margin: auto;
+    padding: 1rem 0;
 }
+
+.container-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fm-logo-header {
+    font-size: 2rem;
+    margin: .5rem;
+    text-decoration: none;
+    
+}
+
+.fm-nav-menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+.fm-menu li {
+    list-style: none;
+}
+
+.fm-menu li a {
+    text-decoration: none;
+    
+}
+
