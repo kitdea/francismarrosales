@@ -1,0 +1,12 @@
+.header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    height: 0;
+    z-index: 4;
+}
+
+.fm-nav-menu {
+    display: flex;
+    flex-direction: column;
+}
