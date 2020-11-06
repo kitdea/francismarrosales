@@ -185,6 +185,8 @@ img {
     
 }
 
+
+
 .col-cont {
     /* flex: 1 1 50%; */
     /* flex-wrap: wrap; */
@@ -211,7 +213,7 @@ img {
 #contact {
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     padding: 300px 10px;
     /* background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)),
@@ -308,10 +310,18 @@ button:hover {
     font-weight: 100;
 }
 
+/* FOOTER */
+footer {
+    background-color: #222831;
+    padding: 1rem;
+    position: sticky;
+}
+
 .social-icons {
     justify-content: center;
-    margin: 200px auto;
-    
+    margin: 60px auto;
+    color: #ffffff;
+    position: sticky;
 }
 
 .social-icons ul {
@@ -328,4 +338,9 @@ button:hover {
 .rights p {
     text-align: center;
     font-weight: 100;
+    color: #ffffff;
+}
+
+.icons {
+    color: #ffffff;
 }
