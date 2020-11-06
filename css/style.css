@@ -60,6 +60,7 @@ img {
     color: #393e46;
     text-align: center; 
     letter-spacing: 0.2rem;
+    cursor: default;
 }
 
 .hero-content h1 {
@@ -70,6 +71,7 @@ img {
     line-height: 1;
     text-align: center; 
     letter-spacing: 1rem;
+    cursor: default;
 }
 
 .hero-content h1:hover {
