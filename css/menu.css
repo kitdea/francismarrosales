@@ -1,12 +1,12 @@
-.header {
+/* .header {
     width: 100%;
     position: sticky;
     top: 0;
     height: 0;
     z-index: 4;
-}
+} */
 
-.container-header {
+/* .container-header {
     width: 60%;
     margin: 0 auto;
     padding: 1rem 0;
@@ -17,7 +17,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} */
 
 #fm-logo-header {
     font-size: 2rem;
@@ -53,3 +53,63 @@
     
   }
 
+  /* MOBILE FIRST */
+  @media only screen and (min-width: 0px) {
+    #fm-logo-header {
+        width: 100%;
+        margin: 0 auto;
+    }
+      .toggle-btn {
+          display: flex;
+          top: 2rem;
+          right: 1rem;
+      }
+      .fm-nav-menu {
+          display: none;
+      }
+      .fm-nav-menu.active {
+        position: absolute;
+        display: flex;
+        transition:  .5s;
+        top: 5.04rem;
+        right: 0;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);     
+        transform: .5s ease-in ease-out;                        
+      }
+  }
+  @media only screen and (min-width: 600px) {
+        .header {
+            width: 100%;
+            position: sticky;
+            top: 0;
+            height: 0;
+            z-index: 4;
+        }
+
+        .container-header {
+            width: 100%;
+            margin: 0 auto;
+            padding: 1rem 0 1rem 0;
+            display: flex;
+            justify-content: space-between; 
+        }
+
+        .fm-nav-menu {
+            display: flex;
+        }        
+
+        .fm-nav-menu.active {
+            position: absolute;
+            display: flex;
+            transition:  .5s;
+            top: 5.04rem;
+            right: 0;
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);     
+            transform: .5s ease-in ease-out;                        
+      }
+
+  }
