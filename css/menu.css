@@ -26,11 +26,7 @@
     color: #393e46;
 } */
 
-#fm-logo-header:hover {
-    color: #ffffff;
-    background-color: #393e46;
-    transition: .4s;
-}
+
 
 .fm-nav-menu {
     margin: 0;
@@ -44,17 +40,23 @@
     color: #393e46;
     text-decoration: none;
     padding: 2rem;  
-    
 }
 
 .fm-menu:hover {
     color: #777777;
     transition: .4s;
-    
   }
 
   /* MOBILE FIRST */
   @media only screen and (min-width: 0px) {
+    .header {
+        width: 100%;
+        position: sticky;
+        top: 0;
+        height: 0;
+        z-index: 4;
+    }
+
     #fm-logo-header {
         width: 100%;
         margin: 0;
@@ -63,6 +65,11 @@
         color: #393e46;
         text-decoration: none;
         font-size: 2rem;
+    }
+
+    #fm-logo-header:hover {
+        color: #11272e;
+        transition: .4s;
     }
       .toggle-btn {
           display: flex;
@@ -84,15 +91,8 @@
         transform: .5s ease-in ease-out;                        
       }
   }
-  @media only screen and (min-width: 600px) {
-        .header {
-            width: 100%;
-            position: sticky;
-            top: 0;
-            height: 0;
-            z-index: 4;
-        }
 
+  @media only screen and (min-width: 600px) {
         .container-header {
             width: 100%;
             margin: 0 auto;
@@ -101,8 +101,14 @@
             justify-content: space-between; 
         }
 
+        #fm-logo-header {
+            float: left;
+            text-align: left;
+            margin: 0 10px;
+        }
         .fm-nav-menu {
             display: flex;
+            align-items: center;
         }        
 
         .fm-nav-menu.active {
