@@ -19,12 +19,12 @@
     align-items: center;
 } */
 
-#fm-logo-header {
+/* #fm-logo-header {
     font-size: 2rem;
     margin: .5rem;
     text-decoration: none;
     color: #393e46;
-}
+} */
 
 #fm-logo-header:hover {
     color: #ffffff;
@@ -57,7 +57,12 @@
   @media only screen and (min-width: 0px) {
     #fm-logo-header {
         width: 100%;
-        margin: 0 auto;
+        margin: 0;
+        float: none;
+        text-align: center;
+        color: #393e46;
+        text-decoration: none;
+        font-size: 2rem;
     }
       .toggle-btn {
           display: flex;
