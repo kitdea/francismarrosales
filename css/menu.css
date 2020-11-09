@@ -84,6 +84,11 @@
       .fm-nav-menu {
           display: none;
       }
+
+      .fm-nav-menu:hover {
+          background-color: #393e46;
+      }
+
       .fm-nav-menu.active {
         position: absolute;
         display: flex;
@@ -97,7 +102,8 @@
       }
   }
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 800px) {
+
         .container-header {
             width: 80%;
             margin: 0 auto;
@@ -111,6 +117,7 @@
             text-align: left;
             margin: 0 10px;
         }
+
         .fm-nav-menu {
             display: flex;
             align-items: center;
