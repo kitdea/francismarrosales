@@ -20,7 +20,7 @@ body{
   }
 
 
-/* FIRST SECTION */
+/* FIRST SECTION
 .container-body {
     display: flex;
     flex-direction: column;
@@ -38,12 +38,12 @@ body{
     /* background-color: rgb(194, 194, 194);
     background-blend-mode: multiply;   */
     
-}
+/* }
 .hero-content {
     width: 80%;
     margin: auto;
     /* padding-top: 30rem; */
-}
+/* }
 
 .hero-content h3 {
     font-size: calc(1.2rem + 0.8vw);
@@ -69,7 +69,7 @@ body{
     background-color: #222831;
     color: #ffffff;
     transition: .5s;
-}
+} */
 
 /* .about-container h1, p {
     width: 80%;
@@ -361,7 +361,7 @@ svg:hover {
     width: 100%;
     padding: 0 10px;
     background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)),
-    url(../image/bg-001.jpg) no-repeat center center fixed;
+    url(../) no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -414,7 +414,7 @@ svg:hover {
     width: 100%;
     padding: 0 10px;
     background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)),
-    url(../image/bg-001.jpg) no-repeat center center fixed;
+    url(../) no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
