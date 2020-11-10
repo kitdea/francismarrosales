@@ -69,7 +69,7 @@
         text-align: left;
         color: #393e46;
         text-decoration: none;
-        font-size: 2rem;
+        font-size: calc(1.4rem + 0.4vw);
     }
 
     #fm-logo-header:hover {
@@ -78,15 +78,20 @@
     }
       .toggle-btn {
           display: flex;
-          top: 2rem;
-          right: 1rem;
+          
       }
       .fm-nav-menu {
           display: none;
       }
 
-      .fm-nav-menu:hover {
-          background-color: #393e46;
+      .fm-nav-menu {
+          flex-direction: column;
+          width: 100%;
+      }
+      
+
+      .fm-menu li a:hover {
+          color: #393e46;
       }
 
       .fm-nav-menu.active {
@@ -96,7 +101,7 @@
         top: 5.04rem;
         right: 0;
         width: 100%;
-        background-color: #ffffff;
+        background-color: #000000;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);     
         transform: .5s ease-in ease-out;                        
       }
@@ -121,7 +126,28 @@
         .fm-nav-menu {
             display: flex;
             align-items: center;
+            justify-content: right;
+            flex-direction: unset;
         }        
+
+        .fm-nav-menu {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style: none;
+            font-size: 1.4rem;
+        }
+
+        .fm-menu {
+            color: #393e46;
+            text-decoration: none;
+            padding: 2rem;  
+        }
+
+        .fm-menu:hover {
+            color: #777777;
+            transition: .4s;
+        }
 
         .fm-nav-menu.active {
             position: absolute;
