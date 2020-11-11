@@ -89,7 +89,7 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     /* background-color: rgb(221, 221, 221);
-    background-blend-mode: multiply;   */
+    background-blend-mode: multiply;  */ 
 }
 .about-content {
     flex-wrap: wrap;
@@ -155,7 +155,7 @@ body{
     display: flex;
     flex-direction: row;  
 }
-
+*/
 
 .work-container img {
     width: 200px;
@@ -401,6 +401,31 @@ svg:hover {
     color: #ffffff;
     transition: .5s;
 }
+
+/* ABOUT SECTION */
+.about-container {
+    flex-direction: column-reverse;
+}
+
+.about-content {
+    width: 100%;
+    padding: 1em;
+    color: #ffffff;
+    background-color: #424242d5;
+    box-shadow: none;
+}
+
+.about-image {
+    width: 100%;
+    box-shadow: none;
+    background: url(../image/francis-001.jpg) no-repeat top center;
+    background-size: cover;
+    
+}
+/* ================================================================== */
+
+/* WORK SECTION */
+
 }
 
 @media only screen and (min-width: 800px) {
@@ -454,4 +479,60 @@ svg:hover {
     color: #ffffff;
     transition: .5s;
 }
+
+/* ABOUT SECTION */
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 0 10px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    /* background-color: rgb(221, 221, 221);
+    background-blend-mode: multiply;  */ 
+}
+.about-content {
+    flex-wrap: wrap;
+    width: 600px;
+    background-color: #424242d5;
+    padding: 2em 3em 2em 3em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about-content h1 {
+    font-weight: 100;
+    font-size: calc(1.2rem + 2vw);
+    color: #ffffff;
+    text-align: left; 
+    line-height: 1.2;
+}
+
+.about-content p {
+    font-weight: 100;
+    color: #ffffff;
+    text-align: left; 
+}
+
+.about-image {
+    flex-wrap: wrap;
+    background: url(../image/francis-001.jpg) no-repeat top center;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 600px;
+    height: 600px;
+}
+
+.about-image:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    transition: .5s;
+}
+
+
+
 }
