@@ -172,7 +172,7 @@ body{
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-    padding: 300px 0 0 0;
+   
     
 }
 
@@ -488,6 +488,20 @@ svg:hover {
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.096), 0 6px 20px 0 rgba(0, 0, 0, 0.089)
 }
 
+/*==========================CONTACT============================*/
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-col {
+    width: 100%;
+}
+
+.form-msg {
+    width: 100%;
+}
 
 }
 
@@ -596,6 +610,28 @@ svg:hover {
     transition: .5s;
 }
 
+#work {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 0 10px;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)),
+    url(../image/background-002.jpg) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    /* background-color: rgb(221, 221, 221);
+    background-blend-mode: multiply;    */
+}
+
+.work-cont-col {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
 .work-container {
     display: flex;
     flex-direction: row;
@@ -603,5 +639,32 @@ svg:hover {
     flex-wrap: wrap;
 }
 
+/*==================CONTACT==========================*/
 
+.contact-form-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-col {
+    width: 400px;
+}
+
+.form-msg {
+    width: 400px;
+}
+
+}
+
+@media only screen and (max-width: 1020px) and (min-width: 768px) {
+    .work-cont-col {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (min-width: 1098px) {
+    .work-cont-col {
+        width: 1286px;
+    }
 }
