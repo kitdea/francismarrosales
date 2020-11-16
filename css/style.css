@@ -287,9 +287,9 @@ button:hover {
 }
 
 .form-msg:hover {
-    background-color: #222831;
+    background-color: #424242;
     color: #ffffff;
-    transition: .5s;
+    transition: .4s;
     cursor: default;
 }
 
@@ -307,20 +307,20 @@ button:hover {
 footer {
     
     padding: 10px;
-    position: sticky;
+    /* position: sticky; */
     z-index: 4;
     top: 0;
     bottom: 0;
 }
 
 .social-icons {
-    /* justify-content: center; */
+    justify-content: center;
     margin: 20px auto;
 }
 
 .social-icons ul {
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     list-style: none;
     margin-bottom: 10px;
 }
@@ -330,7 +330,7 @@ footer {
 }
 
 .rights p {
-    text-align: left;
+    text-align: center;
     font-weight: 100;
     color: #222831;
     margin-left: 16px;
@@ -346,7 +346,7 @@ svg {
 }
 
 svg:hover {
-    color: #222831;
+    color: #424242;
     transition: .5s;
 }
 
@@ -449,7 +449,7 @@ svg:hover {
 }
 
 .col-cont {
-    padding: 1em;
+    padding: 2em 3em;
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
