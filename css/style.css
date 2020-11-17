@@ -101,6 +101,7 @@ body{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+
 .about-content h1 {
     font-weight: 100;
     font-size: calc(1.2rem + 2vw);
@@ -124,10 +125,10 @@ body{
     height: 600px;
 }
 
-.about-image:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+/* .about-image:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.123), 0 6px 20px 0 rgba(0, 0, 0, 0.123);
     transition: .5s;
-}
+} */
 
 #work {
     justify-content: center;
@@ -153,12 +154,6 @@ body{
     align-items: center;
 }
 
-.first-grid-col, .sec-grid-col, .third-grid-col {
-    display: flex;
-    flex-direction: row;  
-}
-
-
 /* .work-container img {
     width: 200px;
     height: 200px;
@@ -176,21 +171,6 @@ body{
     align-items: center;
    
     
-}
-
-
-
-.col-cont {
-    /* flex: 1 1 50%; */
-    /* flex-wrap: wrap; */
-    align-content: center;
-    align-items: center;
-    color: #424242;
-    background-color: #ffffff;
-    width: 600px;
-    padding: 2em 3em 2em 3em;
-    /* margin: 0 auto; */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .col-cont h1 {
@@ -288,12 +268,7 @@ button:hover {
     justify-content: center;
 }
 
-.form-msg:hover {
-    background-color: #424242;
-    color: #ffffff;
-    transition: .4s;
-    cursor: default;
-}
+
 
 .form-msg h2 {
     font-size: calc(2rem + 2.5vw);
@@ -361,19 +336,19 @@ svg:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 400px;
+    height: 500px;
     width: 100%;
     padding: 0 10px;
     background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)),
-    url(../image/bg-005.jpg) no-repeat center center scroll;
+    url(../image/bg-006.jpg) no-repeat center center scroll;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     /* background-color: rgb(194, 194, 194);
     background-blend-mode: multiply;   */
-    
 }
+
 .hero-content {
     width: 80%;
     margin: 0 auto;
@@ -438,7 +413,7 @@ svg:hover {
     width: 100%;
     padding: 0 10px;
     background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)),
-    url(../image/background-002.jpg) no-repeat center center fixed;
+    url(../image/bg-001.jpg) no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -458,6 +433,7 @@ svg:hover {
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
+    box-shadow: none;
 }
 
 .work-container {
@@ -508,6 +484,12 @@ svg:hover {
     width: 100%;
 }
 
+.form-msg:hover {
+    background-color: #424242;
+    color: #ffffff;
+    cursor: default;
+}
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -521,7 +503,7 @@ svg:hover {
     width: 100%;
     padding: 0 10px;
     background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)),
-    url(../image/bg-005.jpg) no-repeat center center fixed;
+    url(../image/bg-006.jpg) no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -537,7 +519,7 @@ svg:hover {
 }
 
 .hero-content h3 {
-    font-size: calc(1.2rem + 0.8vw);
+    font-size: calc(1.2rem + 0.6vw);
     font-weight: 100;
     color: #393e46;
     text-align: center; 
@@ -548,12 +530,13 @@ svg:hover {
 .hero-content h1 {
     font-weight: 200;
     font-size: calc(0.9rem + 7vw);
-    color: #393e46;
+    color: #ffffff;
     text-align: left; 
     line-height: 1;
     text-align: center; 
     letter-spacing: 1rem;
     cursor: default;
+    background-color: #424242;
 }
 
 .hero-content h1:hover {
@@ -606,8 +589,8 @@ svg:hover {
     background: url(../image/francis-001.jpg) no-repeat top center;
     background-size: cover;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 600px;
-    height: 600px;
+    width: 560px;
+    height: 560px;
 }
 
 .about-image:hover {
@@ -622,7 +605,7 @@ svg:hover {
     width: 100%;
     padding: 0 10px;
     background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)),
-    url(../image/background-002.jpg) no-repeat center center fixed;
+    url(../image/bg-001.jpg) no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -635,6 +618,7 @@ svg:hover {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
+    width: 70%;
 }
 
 .work-container {
@@ -646,6 +630,12 @@ svg:hover {
 
 .col-cont {
     padding: 2em 3em;
+    align-content: center;
+    align-items: center;
+    color: #424242;
+    background-color: #ffffff;
+    width: 600px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*==================CONTACT==========================*/
