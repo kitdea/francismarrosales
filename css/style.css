@@ -365,7 +365,7 @@ svg:hover {
     width: 100%;
     padding: 0 10px;
     background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)),
-    url(../) no-repeat center center fixed;
+    url(../image/bg-005.jpg) no-repeat center center scroll;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -391,13 +391,14 @@ svg:hover {
 
 .hero-content h1 {
     font-weight: 200;
-    font-size: calc(0.9rem + 7vw);
-    color: #393e46;
+    font-size: calc(0.6rem + 7vw);
+    color: #ffffff;
     text-align: left; 
     line-height: 1;
     text-align: center; 
     letter-spacing: 1rem;
     cursor: default;
+    background-color: #424242;
 }
 
 .hero-content h1:hover {
@@ -520,7 +521,7 @@ svg:hover {
     width: 100%;
     padding: 0 10px;
     background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)),
-    url(../) no-repeat center center fixed;
+    url(../image/bg-005.jpg) no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
