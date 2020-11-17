@@ -55,16 +55,16 @@
         top: 0;
         height: 0;
         z-index: 4;
+       
     }
 
     .container-header {
         width: 100%;
-        padding: 1rem 0 1rem 0;
+        padding: 1rem 10px 1rem 10px;
     }
 
     #fm-logo-header {
         width: 100%;
-        margin: 0 10px;
         float: left;
         text-align: left;
         color: #393e46;

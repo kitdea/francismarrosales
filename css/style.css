@@ -305,12 +305,13 @@ button:hover {
 
 /* FOOTER */
 footer {
-    
     padding: 10px;
     /* position: sticky; */
     z-index: 4;
     top: 0;
     bottom: 0;
+    width: 100%;
+    background-color: #424242;
 }
 
 .social-icons {
@@ -330,10 +331,11 @@ footer {
 }
 
 .rights p {
+    font-size: 14px;
     text-align: center;
     font-weight: 100;
-    color: #222831;
-    margin-left: 16px;
+    color: #ffffff;
+    
 }
 
 .icons {
@@ -346,7 +348,7 @@ svg {
 }
 
 svg:hover {
-    color: #424242;
+    color: #ffffff;
     transition: .5s;
 }
 
@@ -449,7 +451,7 @@ svg:hover {
 }
 
 .col-cont {
-    padding: 2em 3em;
+    padding: 1em;
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
@@ -639,6 +641,10 @@ svg:hover {
     flex-wrap: wrap;
 }
 
+.col-cont {
+    padding: 2em 3em;
+}
+
 /*==================CONTACT==========================*/
 
 .contact-form-container {
@@ -663,8 +669,3 @@ svg:hover {
     }
 }
 
-@media only screen and (min-width: 1098px) {
-    .work-cont-col {
-        width: 1286px;
-    }
-}
