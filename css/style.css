@@ -21,7 +21,9 @@ body{
     background: #cacaca; /* Gecko Browsers */
   }
 
-
+  html {
+    scroll-behavior: smooth;
+  }
 /* FIRST SECTION
 .container-body {
     display: flex;
