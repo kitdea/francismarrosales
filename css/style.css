@@ -490,6 +490,7 @@ svg:hover {
     background-color: #222831;
     color: #ffffff;
     cursor: default;
+    transition: .5s ease-in-out;
 }
 
 }
