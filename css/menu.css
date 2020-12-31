@@ -48,7 +48,7 @@
   }
 
   /* MOBILE FIRST */
-  @media only screen and (min-width: 0px) {
+
     .header {
         width: 100%;
         position: sticky;
@@ -105,7 +105,7 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);     
         transform: .5s ease-in ease-out;                        
       }
-  }
+ 
 
   @media only screen and (min-width: 800px) {
 
