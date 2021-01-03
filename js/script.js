@@ -3,5 +3,5 @@ const navMenu = document.getElementsByClassName('fm-nav-menu')[0];
 
 menuBtn.addEventListener('click', () => {
     navMenu.classList.toggle('active');
-} )
+});
 

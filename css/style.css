@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap');
 
+
 *{
     margin: 0;
     padding: 0;
@@ -24,62 +25,168 @@ body{
   html {
     scroll-behavior: smooth;
   }
-/* FIRST SECTION
-.container-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    padding: 0 10px;
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)),
-    url(../image/unplash-001.jpg) no-repeat center center fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    /* background-color: rgb(194, 194, 194);
-    background-blend-mode: multiply;   */
+
+
+/* HEADER */
+
+    .header {
+        width: 100%;
+        position: sticky;
+        top: 0;
+        height: 0;
+        z-index: 4;
+       
+    }
+
+    .container-header {
+        width: 100%;
+        padding: 1rem 10px 1rem 10px;
+        display: flex;
+    }
+
+    #fm-logo-header {
+        width: 100%;
+        float: left;
+        text-align: left;
+        color: #393e46;
+        text-decoration: none;
+        font-size: calc(1.4rem + 0.4vw);
+    }
+
+    #fm-logo-header:hover {
+        color: #11272e;
+        transition: .4s;
+    }
+
+      .toggle-btn {
+          display: flex;
+          text-decoration: none;
+          color: #424242;
+          font-size: 22px;
+          justify-content: center;
+          align-items: center;
+          align-self: center;     
+      }
+
+      .toggle-btn:hover {
+          color: #11272e;
+      }
+
+      .fm-nav-menu {
+          display: none;
+      }
+
+      .fm-nav-menu {
+          flex-direction: column;
+      }
+
+      .fm-nav-menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 1.1rem;
+      }
     
-/* }
-.hero-content {
-    width: 80%;
-    margin: auto;
-    /* padding-top: 30rem; */
-/* }
+      .fm-menu {
+        color: #393e46;
+        text-decoration: none;
+        padding: 1rem;
+      }
 
-.hero-content h3 {
-    font-size: calc(1.2rem + 0.8vw);
-    font-weight: 100;
-    color: #393e46;
-    text-align: center; 
-    letter-spacing: 0.2rem;
-    cursor: default;
-}
+      .fm-menu li {
+          padding: 12px;
+      }
+      .fm-menu:hover {
+          color: #ffffff;
+      }
 
-.hero-content h1 {
-    font-weight: 200;
-    font-size: calc(0.9rem + 7vw);
-    color: #393e46;
-    text-align: left; 
-    line-height: 1;
-    text-align: center; 
-    letter-spacing: 1rem;
-    cursor: default;
-}
+      .fm-nav-menu.active {
+        position: absolute;
+        display: flex;
+        top: 5rem;
+        right: 0;
+        width: 100%;
+        background-color: #ffffff71;
+        padding: 10px 0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);     
+                               
+      }
 
-.hero-content h1:hover {
-    background-color: #222831;
-    color: #ffffff;
-    transition: .5s;
-} */
+      .fm-nav-menu li:hover {
+        color: #ffffff;
+        background-color: #393e46;
+        cursor: pointer;
+      }
+ 
 
-/* .about-container h1, p {
-    width: 80%;
-    margin: 0 auto;
-} */
+  @media only screen and (min-width: 768px) {
 
+        .container-header {
+            width: 80%;
+            margin: 0 auto;
+            padding: 1rem 0 1rem 0;
+            display: flex;
+            justify-content: space-between; 
+        }
+
+        #fm-logo-header {
+            float: left;
+            text-align: left;
+            margin: 0 10px;
+        }
+
+        .toggle-btn {
+            display: none;
+        }
+
+        .fm-nav-menu {
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            flex-direction: unset;
+            float: right;
+        }        
+
+        .fm-nav-menu {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style: none;
+            font-size: 1.4rem;
+        }
+
+        .fm-menu {
+            color: #393e46;
+            text-decoration: none;
+            padding: 2rem;  
+        }
+
+        .fm-menu:hover {
+            color: #777777;
+            transition: .4s;
+        }
+
+        .fm-nav-menu.active {
+            position: absolute;
+            display: flex;
+            transition:  .5s;
+            top: 5.04rem;
+            right: 0;
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);     
+            transform: .5s ease-in ease-out;                        
+      }
+
+  }
+
+  /* HEADER */
+
+
+
+
+  /* ABOUT */
+  
 .about-container {
     display: flex;
     flex-direction: row;
