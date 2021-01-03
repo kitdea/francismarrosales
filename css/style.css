@@ -155,6 +155,10 @@ body{
             font-size: 1.4rem;
         }
 
+        .fm-nav-menu li:hover {
+            background-color: transparent;
+          }
+
         .fm-menu {
             color: #393e46;
             text-decoration: none;
@@ -162,8 +166,8 @@ body{
         }
 
         .fm-menu:hover {
-            color: #777777;
-            transition: .4s;
+            color: #000000;
+            transition: .5s ease-in-out;
         }
 
         .fm-nav-menu.active {
