@@ -592,10 +592,9 @@ svg:hover {
 }
 
 .form-msg:hover {
-    background-color: #222831;
+    background-color: #424242;
     color: #ffffff;
     cursor: default;
-    transition: .5s ease-in-out;
 }
 
 
