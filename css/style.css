@@ -34,8 +34,7 @@ body{
         position: sticky;
         top: 0;
         height: 0;
-        z-index: 4;
-       
+        z-index: 1000;
     }
 
     .container-header {
@@ -58,15 +57,14 @@ body{
         transition: .4s;
     }
 
-      .toggle-btn {
-          /* display: flex; */
-          text-decoration: none;
-          color: #424242;
-          font-size: 22px;
-          justify-content: center;
-          align-items: center;
-          align-self: center;     
-      }
+    .toggle-btn {
+        text-decoration: none;
+        color: #424242;
+        font-size: 22px;
+        justify-content: center;
+        align-items: center;
+        align-self: center;     
+    }
 
       .toggle-btn:hover {
           color: #11272e;
@@ -95,7 +93,7 @@ body{
       
       ul li:hover a {
         color: #fff;
-}
+      }
 
       .fm-nav-menu {
         position: absolute;
@@ -103,7 +101,6 @@ body{
         right: 0;
         width: 100%;
         background-color: #ffffff71;
-        /* padding: 10px 0; */
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);     
                                
       }
@@ -123,12 +120,10 @@ body{
             margin: 0 auto;
             padding: 1rem 0 1rem 0;
             display: flex;
-            justify-content: space-between; 
+            justify-content: space-between;
         }
 
         #fm-logo-header {
-            /* float: left; */
-            /* text-align: left; */
             margin: 0 10px;
         }
 
@@ -137,45 +132,25 @@ body{
         }     
 
         .fm-nav-menu {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            align-items: center;
-            align-self: center;
-            align-content: center;
-            margin: 0;
-            padding: 0;
-            list-style: none;
+            position: unset;
+            display: flex;  
             font-size: 1.4rem;
+            width: unset;
+            background-color: unset;
+            box-shadow: unset;
         }
 
         .fm-nav-menu li:hover {
-            background-color: transparent;
-          }
+            background-color: #00000005;  
+        }
+
+        ul li:hover a {
+            color: #11272e;
+        }
 
         .fm-menu {
-            color: #393e46;
-            text-decoration: none;
-            padding: 2rem;  
+            padding: 0 2rem;
         }
-
-        .fm-menu:hover {
-            color: #000000;
-            transition: .5s ease-in-out;
-        }
-
-        /* .fm-nav-menu.active {
-            position: absolute;
-            display: flex;
-            transition:  .5s;
-            top: 5.04rem;
-            right: 0;
-            width: 100%;
-            background-color: #ffffff;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);     
-            transform: .5s ease-in ease-out;                        
-      } */
-
   }
 
   /* ABOUT */
