@@ -208,9 +208,6 @@ body{
 } */
 
 #work {
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     width: 100%;
     padding: 0 10px;
     background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)),
@@ -226,28 +223,7 @@ body{
 .work-container {
     /* margin-right: .5rem; */
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
-
-/* .work-container img {
-    width: 200px;
-    height: 200px;
-    margin: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-} */
-
-.work-cont-col {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-   
-    
 }
 
 .col-cont h1 {
@@ -691,9 +667,12 @@ svg:hover {
 
 .work-cont-col {
     display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    width: 70%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.col-cont {
+    text-align: center;
 }
 
 .work-container {
@@ -701,16 +680,20 @@ svg:hover {
     flex-direction: row;
     width: 100%;
     flex-wrap: wrap;
+    align-items: center;
+    align-self: center;
 }
 
-.col-cont {
-    padding: 2em 3em;
-    align-content: center;
-    align-items: center;
-    color: #424242;
+.bg1 {
+    margin: 0 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.bg1:hover {
+    transform: scale(1.1);
     background-color: #ffffff;
-    width: 600px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*==================CONTACT==========================*/
