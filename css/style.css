@@ -59,7 +59,7 @@ body{
     }
 
       .toggle-btn {
-          display: flex;
+          /* display: flex; */
           text-decoration: none;
           color: #424242;
           font-size: 22px;
@@ -77,10 +77,6 @@ body{
       }
 
       .fm-nav-menu {
-          flex-direction: column;
-      }
-
-      .fm-nav-menu {
         margin: 0;
         padding: 0;
         list-style: none;
@@ -92,22 +88,22 @@ body{
         text-decoration: none;
         padding: 1rem;
       }
-
-      .fm-menu li {
-          padding: 12px;
+      
+      .fm-nav-menu li {
+          padding: 10px 0;
       }
-      .fm-menu:hover {
-          color: #ffffff;
-      }
+      
+      ul li:hover a {
+        color: #fff;
+}
 
-      .fm-nav-menu.active {
+      .fm-nav-menu {
         position: absolute;
-        display: flex;
-        top: 5rem;
+        top: 4rem;
         right: 0;
         width: 100%;
         background-color: #ffffff71;
-        padding: 10px 0;
+        /* padding: 10px 0; */
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);     
                                
       }
@@ -115,6 +111,7 @@ body{
       .fm-nav-menu li:hover {
         color: #ffffff;
         background-color: #393e46;
+        width: 100%;
         cursor: pointer;
       }
  
@@ -130,27 +127,24 @@ body{
         }
 
         #fm-logo-header {
-            float: left;
-            text-align: left;
+            /* float: left; */
+            /* text-align: left; */
             margin: 0 10px;
         }
 
         .toggle-btn {
             display: none;
-        }
+        }     
 
         .fm-nav-menu {
             display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
             align-items: center;
-            justify-content: right;
-            flex-direction: unset;
-            float: right;
-        }        
-
-        .fm-nav-menu {
+            align-self: center;
+            align-content: center;
             margin: 0;
             padding: 0;
-            display: flex;
             list-style: none;
             font-size: 1.4rem;
         }
@@ -170,7 +164,7 @@ body{
             transition: .5s ease-in-out;
         }
 
-        .fm-nav-menu.active {
+        /* .fm-nav-menu.active {
             position: absolute;
             display: flex;
             transition:  .5s;
@@ -180,7 +174,7 @@ body{
             background-color: #ffffff;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);     
             transform: .5s ease-in ease-out;                        
-      }
+      } */
 
   }
 
