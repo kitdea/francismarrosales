@@ -360,8 +360,7 @@ button:hover {
 /* FOOTER */
 footer {
     padding: 10px;
-    /* position: sticky; */
-    z-index: 4;
+    z-index: 1000;
     top: 0;
     bottom: 0;
     width: 100%;
@@ -394,6 +393,7 @@ footer {
 
 .icons {
    color: #b9b9b9;
+   background-color: unset;
 }
 
 svg {
