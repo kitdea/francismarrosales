@@ -710,10 +710,28 @@ svg:hover {
 
 }
 
-@media only screen and (max-width: 1020px) and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1020px) {
+    #work{
+        padding: 20px 0;
+        height: 100%;
+    }
+
     .work-cont-col {
-        flex-direction: column;
-        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .work-container {
+        width: 100%;
+    }
+
+    .work-container img {
+    height: 150px;
+    width: 150px;
+}
+
+    .bg1 {
+        width: 350px;
+        margin-top: 20px;
     }
 }
 
