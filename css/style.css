@@ -161,7 +161,6 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     width: 100%;
     /* padding: 0 10px; */
     background-size: cover;
@@ -172,10 +171,8 @@ body{
     background-blend-mode: multiply;  */ 
 }
 .about-content {
-    flex-wrap: wrap;
-    width: 600px;
+    width: 100%;
     background-color: #424242d5;
-    /* padding: 2em 3em 2em 3em; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -185,28 +182,36 @@ body{
     font-size: calc(1.2rem + 2vw);
     color: #ffffff;
     text-align: left; 
-    line-height: 1.2;
+    /* line-height: 1.2; */
 }
 
 .about-content p {
     font-weight: 100;
     color: #ffffff;
-    text-align: left; 
+}
+
+.about-image img {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .about-image {
-    flex-wrap: wrap;
-    background: url(../image/francis-001.jpg) no-repeat top center;
-    background-size: cover;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 600px;
-    height: 600px;
-}
-
-/* .about-image:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.123), 0 6px 20px 0 rgba(0, 0, 0, 0.123);
-    transition: .5s;
-} */
+        width: 100%;
+        position: relative;
+        /* display: inline-block; */
+    }
+    .about-image .img-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        transition: .3s;
+    }
+    .about-image:hover .img-top {
+        display: inline; 
+        
+    }
 
 #work {
     width: 100%;
@@ -451,19 +456,18 @@ svg:hover {
     box-shadow: none;
 }
 
-.about-image {
+/* .about-image {
     width: 100%;
     box-shadow: none;
     background: url(../image/francis-001.jpg) no-repeat top center;
     background-size: cover;
     
-}
+} */
 
 /* WORK SECTION */
 
 #work {
     justify-content: center;
-    align-items: center;
     height: 100%;
     width: 100%;
     padding: 20px 10px;
@@ -492,8 +496,7 @@ svg:hover {
 }
 
 .work-container {
-    display: grid;
-    gap: 10px;
+    flex-direction: column;
     margin: 30px auto;
     text-align: center;
 }
@@ -601,16 +604,10 @@ svg:hover {
     height: 100vh;
     width: 100%;
     padding: 0 10px;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    /* background-color: rgb(221, 221, 221);
-    background-blend-mode: multiply;  */ 
+    margin: 0 auto;
 }
 .about-content {
-    flex-wrap: wrap;
-    width: 600px;
+    width: 100%;
     background-color: #424242d5;
     padding: 2em 3em 2em 3em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -631,17 +628,16 @@ svg:hover {
 }
 
 .about-image {
-    flex-wrap: wrap;
-    background: url(../image/francis-001.jpg) no-repeat top center;
-    background-size: cover;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 560px;
-    height: 560px;
+    width: 100%;
+    margin: 20px;
 }
 
-.about-image:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
-    transition: .5s;
+.about-image img {
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+   -ms-filter: grayscale(100%);
+   filter: grayscale(100%);
 }
 
 #work {
@@ -674,14 +670,12 @@ svg:hover {
     display: flex;
     flex-direction: row;
     width: 100%;
-    flex-wrap: wrap;
-    align-items: center;
     align-self: center;
 }
 
 .bg1 {
     width: 350px;
-    margin: 0 20px;
+    margin: 0 10px;
     padding: 20px;
     cursor: pointer;
     transition: all .2s ease-in-out;
@@ -724,6 +718,11 @@ svg:hover {
     margin-bottom: 0;
 }
 
+svg:hover {
+    color: #ffffff;
+    transition: .5s ease-in-out;
+}
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1020px) {
@@ -743,11 +742,26 @@ svg:hover {
     .work-container img {
     height: 150px;
     width: 150px;
+    }
+
 }
 
-    .bg1 {
-        width: 350px;
-        margin-top: 20px;
+@media only screen and (min-width: 1200px){
+    .about-container {
+        width: 1100px;
     }
+
+    .about-content {
+        height: 660px;
+    }
+
+    .work-cont-col {
+        width: 100%;
+    }
+
+    .bg1 {
+        margin: 0 20px;
+    }
+
 }
 
