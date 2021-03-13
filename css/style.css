@@ -133,7 +133,7 @@ body{
 
         .fm-nav-menu {
             position: unset;
-            display: flex;  
+            display: flex !important;  
             font-size: 1.4rem;
             width: unset;
             background-color: unset;
