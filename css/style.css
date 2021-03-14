@@ -510,7 +510,7 @@ svg:hover {
 .bg1 {
     padding: 10px;
     margin: 20px 0;
-    background-color:  rgba(255, 255, 255, 0.753);
+    background-color:  rgb(255, 255, 255);
     /* box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.096), 0 6px 20px 0 rgba(0, 0, 0, 0.089); */
 }
 
@@ -679,6 +679,7 @@ svg:hover {
     padding: 20px;
     cursor: pointer;
     transition: all .2s ease-in-out;
+    background-color:  rgba(255, 255, 255, 0.753);
     -webkit-filter: grayscale(100%);
    -moz-filter: grayscale(100%);
    -ms-filter: grayscale(100%);
