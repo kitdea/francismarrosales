@@ -200,6 +200,7 @@ body{
         position: relative;
         /* display: inline-block; */
     }
+
     .about-image .img-top {
         display: none;
         position: absolute;
@@ -209,8 +210,7 @@ body{
         transition: .3s;
     }
     .about-image:hover .img-top {
-        display: inline; 
-        
+        display: inline;    
     }
 
 #work {
@@ -456,16 +456,7 @@ svg:hover {
     box-shadow: none;
 }
 
-/* .about-image {
-    width: 100%;
-    box-shadow: none;
-    background: url(../image/francis-001.jpg) no-repeat top center;
-    background-size: cover;
-    
-} */
-
 /* WORK SECTION */
-
 #work {
     justify-content: center;
     height: 100%;
