@@ -155,7 +155,6 @@ body{
   }
 
   /* ABOUT */
-  
 .about-container {
     display: flex;
     flex-direction: row;
@@ -176,7 +175,6 @@ body{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
 .about-content h1 {
     font-weight: 100;
     font-size: calc(1.2rem + 2vw);
@@ -192,26 +190,26 @@ body{
 
 .about-image img {
     width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
 .about-image {
-        width: 100%;
-        position: relative;
-        /* display: inline-block; */
-    }
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+}
 
-    .about-image .img-top {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 99;
-        transition: .3s;
-    }
-    .about-image:hover .img-top {
-        display: inline;    
-    }
+.about-image .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    transition: .3s;
+}
+.about-image:hover .img-top {
+    display: inline;    
+}
 
 #work {
     width: 100%;
